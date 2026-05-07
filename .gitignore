@@ -1,0 +1,25 @@
+# ---编译输出 & 临时文件 ---
+*.exe
+*.o
+*.obj
+*.out
+*.log
+*.tmp
+
+# --- Python缓存 ---
+*.pyc
+
+# ---Java 编译结果 ---
+*.class
+*.jar
+*.war
+
+# ---IDE & 编辑器设置 ---
+.vscode/
+.idea/
+*.swp
+
+# --- 忽略特定文件夹 ---
+build/
+bin/
+target/

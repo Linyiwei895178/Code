@@ -45,7 +45,7 @@
 //     public:
 //     Person(string name, int age)
 //     {
-//        this->name = name; 
+//        this->name = name;
 //        this->age = age;
 //     }
 
@@ -71,7 +71,7 @@
 
 //     // for_each(v.begin(), v.end(), print01);
 //     // cout << endl;
-    
+
 //     // for_each(v.begin(), v.end(), print02());
 //     // cout << endl;
 //     // vector<int> vTarget;
@@ -79,7 +79,7 @@
 //     // transform(v.begin(), v.end(), vTarget.begin(), Transform());
 
 //     // for_each(vTarget.begin(), vTarget.end(), print2());
-//     // cout << endl; 
+//     // cout << endl;
 //     vector<int>::iterator it = find(v.begin(), v.end(), 50);
 //     if (it == v.end())
 //     {
@@ -121,7 +121,7 @@
 //     test2();
 //     return 0;
 // }
-// // 
+// //
 // #include <iostream>
 // using namespace std;
 // #include <vector>
@@ -206,17 +206,17 @@
 //     test2();
 //     return 0;
 // }
-// 
-#include <iostream>
-using namespace std;
-#include <vector>
-#include <algorithm>
+//
+// #include <iostream>
+// using namespace std;
+// #include <vector>
+// #include <algorithm>
 
 
 // void test1()
 // {
     // vector<int> v;
-    
+
     // v.push_back(0);
     // v.push_back(2);
     // v.push_back(0);
@@ -295,10 +295,10 @@ using namespace std;
 //     cout << "count = " << num << endl;
 // }
 
-void myPrint(int val)
-{
-    cout << val << " ";
-}
+// void myPrint(int val)
+// {
+//     cout << val << " ";
+// }
 
 // void test1()
 // {
@@ -322,7 +322,7 @@ void myPrint(int val)
 //     // {
 //     //     v.push_back(i);
 //     // }
-    
+
 //     // random_shuffle(v.begin(), v.end());
 //     // for_each(v.begin(),v.end(), myPrint);
 //     // cout << endl;
@@ -373,6 +373,142 @@ void myPrint(int val)
     // cout << endl;
     // for_each(v2.begin(), v2.end(), myPrint);
     // cout << endl;
+// }
+
+// #include <iostream>
+// #include <numeric>
+// #include <vector>
+// #include <algorithm>
+// #include <numeric>
+// using namespace std;
+
+// class myPrint
+// {
+//     public:
+//     void operator()(int val)
+//     {
+//         cout << val << " ";
+//     }
+// };
+
+// class Greater30
+// {
+//     public:
+//     bool operator()(int val)
+//     {
+//         return val >= 30;
+//     }
+// };
+// void myPrint(int val)
+// {
+//     cout << val << " ";
+// }
+
+// void test1()
+// {
+//     // vector<int> v;
+//     // v.push_back(10);
+//     // v.push_back(40);
+//     // v.push_back(20);
+//     // v.push_back(40);
+//     // v.push_back(30);
+//     // v.push_back(50);
+//     // v.push_back(20);
+//     // v.push_back(30);
+
+//     // cout << "before replace: " << endl;
+//     // for_each(v.begin(), v.end(), myPrint());
+//     // cout << endl;
+
+//     // replace_if(v.begin(), v.end(), Greater30(), 3000);
+//     // cout << "after replace: " << endl;
+//     // for_each(v.begin(), v.end(), myPrint());
+//     // cout << endl;
+//     // vector<int> v1;
+//     // vector<int> v2;
+
+//     // for (int i = 0; i < 10; i++)
+//     // {
+//     //     v1.push_back(i);
+//     //     v2.push_back(i + 100);
+//     // }
+
+//     // cout << "before swap: " << endl;
+//     // for_each(v1.begin(), v1.end(), myPrint);
+//     // cout << endl;
+
+//     // for_each(v2.begin(), v2.end(), myPrint);
+//     // cout << endl;
+
+//     // cout << "-------" << endl;
+//     // cout <<"after swap: " << endl;
+//     // swap(v1, v2);
+//     // for_each(v1.begin(), v1.end(), myPrint);
+//     // cout << endl;
+
+//     // for_each(v2.begin(), v2.end(), myPrint);
+//     // cout << endl;
+//     vector<int> v;
+
+//     for (int i = 0; i <= 100; i++)
+//     {
+//         v.push_back(i);
+//     }
+
+//     int total = accumulate(v.begin(), v.end(), 0);
+//     cout << "total = " << total << endl;
+// }
+
+// int main()
+// {
+//     test1();
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+// #include <vector>
+// #include <algorithm>
+
+// void myPrint(int val)
+// {
+//     cout << val << " ";
+// }
+
+// void test1()
+// {
+//     vector<int> v1;
+//     vector<int> v2;
+
+//     for (int i = 0; i < 10; i++)
+//     {
+//         v1.push_back(i);
+//         v2.push_back(i + 5);
+//     }
+
+//     // vTarget.resize(min(v1.size(), v2.size()));
+//     // vector<int>::iterator itEnd = set_intersection(v1.begin(), v1.end(), v2.begin(), v2.end(), vTarget.begin());
+
+//     // for_each(vTarget.begin(), itEnd, myPrint);
+//     // cout << endl;
+//     // vector<int> vTarget;
+
+//     // vTarget.resize(v1.size() + v2.size());
+
+//     // vector<int>::iterator itEnd = set_union(v1.begin(), v1.end(), v2.begin(), v2.end(), vTarget.begin());
+
+//     // for_each(vTarget.begin(), itEnd, myPrint);
+//     // cout << endl;
+//     vector<int> vTarget;
+//     vTarget.resize(max(v1.size(), v2.size()));
+
+//     vector<int>::iterator itEnd = set_difference(v1.begin(), v1.end(), v2.begin(), v2.end(), vTarget.begin());
+//     for_each(vTarget.begin(), itEnd, myPrint);
+//     cout << endl;
+
+//     vector<int>::iterator itEnd1 = set_difference(v2.begin(), v2.end(), v1.begin(), v1.end(), vTarget.begin());
+//     for_each(vTarget.begin(), itEnd1, myPrint);
+//     cout << endl;
 // }
 
 // int main()
