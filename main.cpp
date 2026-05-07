@@ -516,3 +516,12 @@
 //     test1();
 //     return 0;
 // }
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    cout << "use the vscode git" << endl;
+    return 0;
+}
