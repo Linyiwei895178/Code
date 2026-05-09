@@ -523,5 +523,12 @@ using namespace std;
 int main()
 {
     cout << "use the vscode git" << endl;
+    cout << "llcm debug" << endl;
+    int a = 10;
+    int b = 20;
+    int c = a + b;
+    cout << "c = " << c << endl;
+    int d = a * b;
+    cout << "d = " << d << endl;
     return 0;
 }
