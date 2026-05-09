@@ -100,7 +100,7 @@
 
 //     v.push_back(p1);
 //     v.push_back(p2);
-//     v.push_back(p3);
+
 //     v.push_back(p4);
 
 //     vector<Person>::iterator it = find(v.begin(), v.end(), p2);
