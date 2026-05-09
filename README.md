@@ -4,6 +4,7 @@
 # This is my cpp practice code for itheima and I use zed editor to complete
 
 ***I use git for version control system and by the way it is quite useful for me to manage code***
+
 ~~Git is so helpful but I am too low~~
 
 ==Linux is the code god==
